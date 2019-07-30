@@ -108,6 +108,10 @@
       white-space: nowrap;
       text-overflow: ellipsis;
     }
+
+    &__image {
+      width: 100%;
+    }
   }
 }
 
@@ -180,9 +184,6 @@
     &__image {
       float: left;
       margin: 0 0 10px 0;
-    }
-
-    img {
       width: 100%;
     }
 

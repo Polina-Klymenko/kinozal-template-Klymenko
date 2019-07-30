@@ -7,11 +7,6 @@
   background-color: #191919;
 }
 
-.navbar-inverse .navbar-toggle {
-  float: none;
-  margin-right: 0;
-}
-
 .navbar-inverse .navbar-nav > .active > a {
   background-color: #053159;
 }
@@ -28,6 +23,15 @@
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   background-color: #165690;
+}
+
+.navbar-toggle {
+  float: none;
+  margin-right: 0;
+}
+
+.navbar-header {
+  text-align: center;
 }
 
 .panel {
@@ -214,6 +218,11 @@ a:hover, a:focus {
      text-overflow: ellipsis;
 }
 
+.new-films-item__image,
+.top-week-item__image {
+  width: 100%;
+}
+
 .film-news h2 {
   font-size: 2.5rem;
   margin: 60px 0 45px 0;
@@ -285,9 +294,6 @@ a:hover, a:focus {
 .film-news-item__image {
   float: left;
   margin: 0 0 10px 0;
-}
-
-.film-news-item img {
   width: 100%;
 }
 
