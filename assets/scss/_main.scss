@@ -1,22 +1,193 @@
 .main {
+  margin-bottom: $gap * 4;
+
+  .site-search {
+    margin-top: -15px;
+    margin-bottom: $gap * 3;
+  }
+
+  .user-login {
     margin-bottom: $gap * 4;
+  }
+
 }
 
-.new-films, 
+.new-films,
 .top-week {
-    .row {
-        margin-right: -$gap / 2;
-        margin-left: -$gap / 2;
-        margin-bottom: -$gap;
+  h1 {
+    font-size: 3rem;
+    margin: -8px 0 45px 0;
+    font-family: "PT Serif", serif;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      height: 2px;
+      background: $color-accent;
+      margin-right: -100%;
+
+      border: solid $color-light;
+      border-width: 0 10px;
+    }
+
+    @include xs {
+      font-size: 2rem;
+    }
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin: ($gap * 4) 0 ($gap * 3) 0;
+    font-family: "PT Serif", serif;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      height: 2px;
+      background: $color-accent;
+      margin-right: -100%;
+
+      border: solid $color-light;
+      border-width: 0 10px;
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 45px;
+      height: 2px;
+      background: $color-accent;
+      margin-left: 0;
+
+      border-right: solid $color-light;
+      border-width: 0 10px 0 0;
+    }
+
+    @include xs {
+      font-size: 1.75rem;
+    }
+  }
+
+  .row {
+    margin-right: -$gap / 2;
+    margin-left: -$gap / 2;
+    margin-bottom: -$gap;
+  }
+
+  .thumbnail {
+    margin-bottom: 0;
+    transition: background-color 0.5s;
+
+    &:hover,
+    &:focus {
+      background-color: $color-accent;
+      border-color: $color-accent;
+
+      .new-films-item__label {
+        color: $color-light;
+      }
+    }
+  }
+
+  &-item {
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+    margin-bottom: $gap;
+    text-align: center;
+
+    &__label {
+      display: block;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.film-news {
+  h2 {
+    font-size: 2.5rem;
+    margin: ($gap * 4) 0 ($gap * 3) 0;
+    font-family: "PT Serif", serif;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 100%;
+      height: 2px;
+      background: $color-accent;
+      margin-right: -100%;
+
+      border: solid $color-light;
+      border-width: 0 10px;
+    }
+
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 45px;
+      height: 2px;
+      background: $color-accent;
+      margin-left: 0;
+
+      border-right: solid $color-light;
+      border-width: 0 10px 0 0;
+    }
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    color: $color-primary;
+
+    a {
+      transition: color 0.25s;
+    }
+  }
+
+  &-item {
+    &:hover {
+      .thumbnail {
+        background-color: $color-accent;
+      }
+      h3 > a {
+        color: $color-accent;
+      }
+      .btn-warning {
+        background-color: $color-accent;
+      }
     }
 
     .thumbnail {
-        margin-bottom: 0;
+      transition: background-color 0.25s;
     }
 
-    &-item {
-        padding-left: $gap / 2;
-        padding-right: $gap / 2;
-        margin-bottom: $gap;
+    .btn-warning {
+      float: right;
+      margin-bottom: $gap * 2;
+      transition: background-color 0.25s;
     }
+
+    &__image {
+      float: left;
+      margin: 0 0 10px 0;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &__text {
+      text-align: justify;
+    }
+  }
 }

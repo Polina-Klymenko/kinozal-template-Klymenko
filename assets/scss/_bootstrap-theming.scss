@@ -2,6 +2,11 @@
     border-color: transparent;
     background-color: darken($color-dark, 4%);
 
+    .navbar-toggle {
+      float: none;
+      margin-right: 0;
+    }
+
     .navbar-nav {
         > .active > a {
             background-color: saturate(darken($color-primary, 14%), 15%);
