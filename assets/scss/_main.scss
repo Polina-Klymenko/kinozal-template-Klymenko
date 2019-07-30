@@ -1,0 +1,22 @@
+.main {
+    margin-bottom: $gap * 4;
+}
+
+.new-films, 
+.top-week {
+    .row {
+        margin-right: -$gap / 2;
+        margin-left: -$gap / 2;
+        margin-bottom: -$gap;
+    }
+
+    .thumbnail {
+        margin-bottom: 0;
+    }
+
+    &-item {
+        padding-left: $gap / 2;
+        padding-right: $gap / 2;
+        margin-bottom: $gap;
+    }
+}
