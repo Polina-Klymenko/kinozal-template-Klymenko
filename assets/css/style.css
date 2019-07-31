@@ -141,6 +141,8 @@ a:hover, a:focus {
 
 .new-films h2,
 .top-week h2 {
+  display: inline-block;
+  width: 100%;
   font-size: 2.5rem;
   margin: 60px 0 45px 0;
   font-family: "PT Serif", serif;
@@ -224,6 +226,8 @@ a:hover, a:focus {
 }
 
 .film-news h2 {
+  display: inline-block;
+  width: 100%;
   font-size: 2.5rem;
   margin: 60px 0 45px 0;
   font-family: "PT Serif", serif;
@@ -299,6 +303,171 @@ a:hover, a:focus {
 
 .film-news-item__text {
   text-align: justify;
+}
+
+.film-info h1 {
+  font-size: 3rem;
+  margin: -8px 0 45px 0;
+  font-family: "PT Serif", serif;
+  overflow: hidden;
+}
+
+.film-info h1::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 2px;
+  background: #df8a13;
+  margin-right: -100%;
+  border: solid #ffffff;
+  border-width: 0 10px;
+}
+
+.film-info .caption-label {
+  font-size: 1.2rem;
+}
+
+.film-info .badge {
+  font-size: 1rem;
+  margin-top: -0.5%;
+}
+
+.film-info .badge:not(:last-child) {
+  margin-right: 3%;
+}
+
+.film-info .well {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.film-description h2 {
+  display: inline-block;
+  width: 100%;
+  font-size: 2.5rem;
+  margin: 60px 0 45px 0;
+  font-family: "PT Serif", serif;
+  overflow: hidden;
+}
+
+.film-description h2::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 2px;
+  background: #df8a13;
+  margin-right: -100%;
+  border: solid #ffffff;
+  border-width: 0 10px;
+}
+
+.film-description h2::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 45px;
+  height: 2px;
+  background: #df8a13;
+  margin-left: 0;
+  border-right: solid #ffffff;
+  border-width: 0 10px 0 0;
+}
+
+.film-review h2 {
+  display: inline-block;
+  width: 100%;
+  font-size: 2.5rem;
+  margin: 60px 0 45px 0;
+  font-family: "PT Serif", serif;
+  overflow: hidden;
+}
+
+.film-review h2::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 2px;
+  background: #df8a13;
+  margin-right: -100%;
+  border: solid #ffffff;
+  border-width: 0 10px;
+}
+
+.film-review h2::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 45px;
+  height: 2px;
+  background: #df8a13;
+  margin-left: 0;
+  border-right: solid #ffffff;
+  border-width: 0 10px 0 0;
+}
+
+.film-review-user__well {
+  margin-bottom: 0;
+  background-color: #df8a13;
+  padding-left: 19px;
+  padding-right: 19px;
+  color: #ffffff;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.film-review-comment__well {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.film-send-comment {
+  position: relative;
+  overflow: hidden;
+}
+
+.film-send-comment h2 {
+  display: inline-block;
+  width: 100%;
+  font-size: 2.5rem;
+  margin: 60px 0 45px 0;
+  font-family: "PT Serif", serif;
+  overflow: hidden;
+}
+
+.film-send-comment h2::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  height: 2px;
+  background: #df8a13;
+  margin-right: -100%;
+  border: solid #ffffff;
+  border-width: 0 10px;
+}
+
+.film-send-comment h2::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 45px;
+  height: 2px;
+  background: #df8a13;
+  margin-left: 0;
+  border-right: solid #ffffff;
+  border-width: 0 10px 0 0;
+}
+
+.film-send-comment textarea {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.film-send-comment .btn {
+  float: right;
 }
 
 .left-sidebar {
@@ -498,6 +667,21 @@ a:hover, a:focus {
   }
   .new-films h2,
   .top-week h2 {
+    font-size: 1.75rem;
+  }
+  .film-news h2 {
+    font-size: 1.75rem;
+  }
+  .film-info h1 {
+    font-size: 2rem;
+  }
+  .film-description h2 {
+    font-size: 1.75rem;
+  }
+  .film-review h2 {
+    font-size: 1.75rem;
+  }
+  .film-send-comment h2 {
     font-size: 1.75rem;
   }
 }
