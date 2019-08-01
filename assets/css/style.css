@@ -340,6 +340,13 @@ a:hover, a:focus {
 .film-info .well {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  background-color: #f1f1f1;
+  border: 1px solid #dddddd;
+}
+
+.film-description .well {
+  border: 1px solid #dddddd;
+  background-color: #f1f1f1;
 }
 
 .film-description h2 {
@@ -421,6 +428,9 @@ a:hover, a:focus {
 .film-review-comment__well {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  background-color: #f1f1f1;
+  border: 1px solid #dddddd;
+  border-top: none;
 }
 
 .film-send-comment {
