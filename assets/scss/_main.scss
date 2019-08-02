@@ -38,6 +38,18 @@
     @include h2-before-after_html;
   }
 
+  h6 {
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: "PT Sans", sans-serif;
+    line-height: 1.428;
+  }
+
   .row {
     margin-right: -$gap / 2;
     margin-left: -$gap / 2;
